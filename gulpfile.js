@@ -4,7 +4,7 @@ var watch = require('gulp-watch');
 var browserSync = require('browser-sync').create();
 var postcss = require('gulp-postcss');
 var cssimport = require('postcss-import');
-var cssvar = require('postcss-simple-vars');
+var cssvar = require('postcss-variables');
 var cssnested = require('postcss-nested');
 var autoprefixer = require('autoprefixer');
 
