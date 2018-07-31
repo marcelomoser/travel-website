@@ -8,6 +8,7 @@ var cssimport = require('postcss-import');
 var cssvar = require('postcss-variables');
 var cssnested = require('postcss-nested');
 var autoprefixer = require('autoprefixer');
+var mixins = require('postcss-mixins');
 
 //TASKS
 
@@ -18,7 +19,7 @@ gulp.task('css', function() {
 			console.log('err');
 			this.emit('end');
 		}))
-		.pipe(postcss([cssimport, cssvar, autoprefixer({browsers: ['cover 99.5%']}), cssnested]))
+		.pipe(postcss([cssimport, mixins, cssvar, autoprefixer({browsers: ['cover 99.5%']}), cssnested]))
 		.pipe(gulp.dest('./app/assets/output/css'))
 		.pipe(browserSync.stream());
 });
