@@ -1,0 +1,32 @@
+/*The '>' symbol select all directed childrens of the element*/
+
+/*Calc = 100/12 (100% of width divided by 12 columns) = 8.33..
+Then 8.33.. * number of colums will be the width*/
+
+.row {
+	@mixin clearfix;
+	
+	@mixin atMedium {
+		&--gutters > div:not(:last-child) {
+			padding-right: 6.5rem;
+		}
+
+		&__medium-4 {
+			float: left;
+			width: 33.33%;
+
+			&--larger {
+				width: 37%;
+			}
+		}
+
+		&__medium-8 { 
+			float: left;
+			width: 66.66%;
+
+			&--smaller {
+				width: 63%;
+			}
+		}
+	}
+} 

@@ -1,3 +1,24 @@
 .container {
 	padding: 0 2.5rem;
+	max-width: 1250px;
+	margin: 0 auto;
+
+	&--medium {
+		max-width: 980px;
+	}
+	
+	&--b-margin {
+		margin-bottom: 1.5rem;
+
+		@mixin atSmall {
+			margin-bottom: 6rem;
+		}
+	}
+
+	/*This means that the nested container will not use the padding,
+	and will be full-width in small screens*/
+	.container {
+		padding: 0;
+	}
 }
+ 
