@@ -5,12 +5,24 @@ Then 8.33.. * number of colums will be the width*/
 
 .row {
 	@mixin clearfix;
+
+	&--gutters {
+		margin-right: -6.5rem;
+	}
 	
-	@mixin atMedium {
-		&--gutters > div:not(:last-child) {
+	&--gutters-large {
+		margin-right: -10rem;
+	}
+
+	&--gutters > div {
 			padding-right: 6.5rem;
 		}
 
+	&--gutters-large > div {
+		padding-right: 10rem;
+	}
+
+	@mixin atMedium {
 		&__medium-4 {
 			float: left;
 			width: 33.33%;
@@ -18,6 +30,11 @@ Then 8.33.. * number of colums will be the width*/
 			&--larger {
 				width: 37%;
 			}
+		}
+
+		&__medium-6 {
+			float: left;
+			width: 50%;
 		}
 
 		&__medium-8 { 

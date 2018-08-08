@@ -1,0 +1,25 @@
+.feature-item {
+	position: relative;
+	padding-left: 9.5rem;
+	padding-bottom: .1rem;
+
+	@mixin atMedium {
+		padding-bottom: 5rem;
+		min-height: 35rem;
+	}
+
+	@mixin atLarge {
+		min-height: 0;
+	}
+
+	&__icon {
+		position: absolute;
+		left: 0;
+	}
+
+	&__title {
+		font-size: 3rem;
+		font-weight: 400;
+		margin-bottom: 1rem;
+	}
+}
