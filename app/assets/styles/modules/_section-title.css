@@ -1,4 +1,4 @@
-.section-title {
+ .section-title {
 	font-size: 4rem;
 	text-align: center;
 	font-weight: 300;
@@ -18,9 +18,15 @@
 		margin-bottom: 1rem;
 
 		@mixin atSmall {
+			position: relative;
+			top: .7rem;
 			margin-right: 1rem;
 			display: inline-block;
 			margin-bottom: 0;
 		}
+	}
+
+	&--blue {
+		color: $mainBlue;
 	}
 }
