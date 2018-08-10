@@ -7,6 +7,14 @@
 	&--medium {
 		max-width: 980px;
 	}
+
+	&--padding {
+		padding: 0;
+
+		@mixin atMedium {
+			padding: 0 2.5rem;
+		}
+	}
 	
 	&--b-margin {
 		margin-bottom: 1.5rem;
