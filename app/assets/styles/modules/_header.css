@@ -1,0 +1,50 @@
+.header {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	padding: 1.2rem 0;
+
+	@mixin atMedium {
+		background: rgba($mainBlue, .3);
+	}
+
+	&__btn-container {
+		float: right;
+	}
+
+	&__logo {
+		position: absolute;
+		top: 0;
+		background: $mainBlue; 
+		padding: 2.5rem 3.5rem;
+		left: 50%;
+		transform-origin: 50% 0;
+		transform: translateX(-50%) scale(1);
+
+		@mixin atMedium {
+			left: auto;
+			transform: translateX(0) scale(1);
+		}
+	}
+
+	&__menu-content {
+		display: none;
+
+		@mixin atMedium {
+			display: block; 
+		}
+	}
+
+	&__menu-icon {
+		width: 2rem;
+		height: 2rem;
+		background: #fff;
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+
+		@mixin atMedium {
+			display: none;
+		}
+	}
+}
