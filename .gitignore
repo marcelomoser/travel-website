@@ -12,6 +12,7 @@
 node_modules/
 .tmp/
 app/assets/output/
+package-lock.json
 
 # OS or Editor folders
 .DS_Store
