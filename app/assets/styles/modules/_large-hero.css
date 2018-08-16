@@ -18,12 +18,17 @@
 	}
 
 	&__text-content {
+		padding-top: 10rem;
 		position: absolute;
 		text-align: center;
 		left: 0;
 		width: 100%;
 		top: 50%;
 		transform: translateY(-50%);
+
+		mixin atMedium {
+			padding-top: 6rem;
+		}
 	}
 
 	&__title,
@@ -34,10 +39,10 @@
 	}
 
 	&__title {
-		font-size: 6rem;
+		font-size: 5rem;
 
 		@mixin atSmall {
-			font-size: 7rem; 
+			font-size: 6rem; 
 		}
 		
 		@mixin atMedium {
@@ -50,7 +55,7 @@
 	}
 
 	&__subtitle {
-		font-size: 4rem;
+		font-size: 3.5rem;
 
 		@mixin atSmall {
 			font-size: 5rem; 
@@ -67,11 +72,11 @@
 
 	&__description {
 		color: #fff;
-		font-size: 2.7rem;
+		font-size: 2rem;
 		font-weight: 300;
 		text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
 		max-width: 60rem;
-		margin: 3.3rem auto;
+		margin: 2rem auto;
 
 		@mixin atSmall {
 			font-size: 3rem; 
